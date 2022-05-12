@@ -1,10 +1,11 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
-import Login from '../pages/Login';
-import Main from '../pages/Main';
-import About from '../pages/About';
-import PrivateRoute from '../layouts/PrivateRoute';
-import PageNotFound from '../pages/PageNotFound';
+
+const Login = React.lazy(() => import('../pages/Login'));
+const PrivateRoute = React.lazy(() => import('../layouts/PrivateRoute'));
+const Main = React.lazy(() => import('../pages/Main'));
+const About = React.lazy(() => import('../pages/About'));
+const PageNotFound = React.lazy(() => import('../pages/PageNotFound'));
 
 const Router = () => {
   const routes = useRoutes([
