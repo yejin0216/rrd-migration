@@ -15,4 +15,4 @@ React Router Dom V6 마이그레이션 테스트하려고 만든 프로젝트인
 - May/12/22
 
   - React.lazy, React.Suspense 적용 테스트
-  - Webpack HistoryFallback 설정
+  - Webpack HistoryApiFallback 설정
